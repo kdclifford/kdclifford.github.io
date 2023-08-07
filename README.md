@@ -1,1 +1,0 @@
-# kdclifford.github.io
