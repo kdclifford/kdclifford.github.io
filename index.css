@@ -1,42 +1,60 @@
 body {
     background-color: white;
     margin: 0;
-  }
+}
 
-.navigation{
+.navigation {
     padding: 5px;
     margin: 0;
-    text-align: center;
     background-color: grey;
     height: 40px;
+    width: 100%;
+    text-align: right;
+    display: inline-flexbox;
 }
 
 .pageLink {
     font-size: 20px;
-    /* vertical-align: middle; */
-    color: white;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Candara';
+    text-decoration: none;
 }
 
-.navigation a:hover{
-    color: red;
+.navigation a:hover {
+    color: white;
 }
 
 #currentPage {
-  color: black;
-  font-weight: bold;
+    color: black;
+    font-weight: bold;
 }
 
 .tabLinks {
     margin-right: 5px;
     margin-left: 5px;
-    vertical-align: middle;
-    float: right;
 }
 
 .tabLinks img {
     width: 32px;
     height: 32px;
-  }
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Candara';
+    color: black;
+}
+
+.image {
+    vertical-align: middle;
+    text-align: center;
+    float: left;
+}
+
+.tabLinks:hover {
+    filter: invert(100%);
+}
