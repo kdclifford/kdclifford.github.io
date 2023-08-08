@@ -1,11 +1,9 @@
 body {
-    background-color: white;
+    background-color: orange;
     margin: 0;
 }
 
 .navigation {
-    padding: 5px;
-    margin: 0;
     background-color: grey;
     height: 40px;
     width: 100%;
@@ -57,4 +55,52 @@ body {
 
 .tabLinks:hover {
     filter: invert(100%);
+}
+
+.projectLink img {
+    height: 400px;
+    width: 600px;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 8px;
+    border: 3px solid;
+    border-color: black;
+    transition: transform .2s;
+}
+
+.projects {
+    display: inline-block;
+}
+
+.projectLink img:hover {
+    transform: scale(1.05);
+    border-color: greenyellow;
+}
+
+.projectLink {
+    position: relative;
+    display: inline-block;
+}
+
+.projectLink .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    z-index: 1;
+}
+
+.projectLink:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltiptext {
+    font-size: 20px;
 }
