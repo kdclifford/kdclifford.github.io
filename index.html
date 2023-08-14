@@ -3,45 +3,42 @@
 
 <head>
 	<title>Kyle's Portfolio - Home</title>
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./js/index.js"></script>
 </head>
 
-<body>
-	<div class="navigation">
-		<a class='tabLinks' href="https://github.com/kdclifford" target="_blank">
-			<div class="image">
-				<img class="invert" src="./Assets/github.png" alt="Github" />
-			</div>
-		</a>
-		<a class='tabLinks' href="https://www.linkedin.com/in/kyle-clifford-7474b4206" target="_blank">
-			<div class="image">
-				<img src="./Assets/linkedin.png" alt="linkedin" />
-			</div>
-		</a>
-		<a class='pageLink' href="#">About me</a>
-		<a class='pageLink' href="#">Contact</a>
+<body id="body">
+
+	<div id="navigation" class="navigation">
+		<a class='pageLink' href="./index.html">Home</a>
+		<a class='pageLink' href="./Pages/about.html">About me</a>
+		<a class='pageLink' href="./Pages/contact.html">Contact</a>
 	</div>
 	<div class="title">
 		<h1>
 			PROJECTS
 		</h1>
+
+	</div>
 		<div class='projects'>
-			<a class='projectLink' href="https://github.com/kdclifford/Kyle-Clifford-Post-Processing" target="_blank">
-				<img src="./Assets/GodRaysBlur.jpg" alt="Post Processing Image" />
+		<a class='projectLink' href="./Pages/Projects/PostProcessing.html">
+			<img onmouseover="dynamicImg( this ,'./Assets/God_Rays_Blur');"
+				onmouseout="staicImg( this ,'./Assets/God_Rays_Blur');" src="./Assets/God_Rays_Blur.jpg"
+				alt="Post Processing Image" />
 				<span class="tooltiptext">Post Processing</span>
 			</a>
 			<a class='projectLink' href="https://github.com/kdclifford/Ewww-a-Zombie" target="_blank">
-				<img src="./Assets/Round1Image.png" alt="Ewww a Zombie Image" />
+			<!-- <img onmouseover="dynamicImg( this ,'./Assets/Ewww_a_Zombie');" onmouseout="staicImg( this ,'./Assets/Ewww_a_Zombie');" src="./Assets/Ewww_a_Zombie.png" alt="Ewww a Zombie Image" /> -->
+			<img src="./Assets/Ewww_a_Zombie.png" alt="Ewww a Zombie Image" />
 				<span class="tooltiptext">Ewww a Zombie</span>
 			</a>
 			<a class='projectLink' href="https://github.com/kdclifford/GameInADay" target="_blank">
-				<img src="./Assets/Game in a Day example.jpg" alt="Game in a Day Image" />
+			<img onmouseover="dynamicImg( this ,'./Assets/Game_in_a_Day');"
+				onmouseout="staicImg( this ,'./Assets/Game_in_a_Day');" src="./Assets/Game_in_a_Day.jpg"
+				alt="Game in a Day Image" />
 				<span class="tooltiptext">Game in a Day Image</span>
 			</a>
 		</div>
-
-
-	</div>
 </body>
 
 </html>
