@@ -1,6 +1,8 @@
 body {
     background-color: orange;
     margin: 0;
+    text-align: center;
+
 }
 
 .navigation {
@@ -44,7 +46,8 @@ body {
 .title {
     text-align: center;
     font-family: 'Candara';
-    color: black;
+    color: white;
+    background-image: url(./Assets/banner.png);
 }
 
 .image {
@@ -66,10 +69,12 @@ body {
     border: 3px solid;
     border-color: black;
     transition: transform .2s;
+    vertical-align: middle;
 }
 
 .projects {
     display: inline-block;
+    text-align: center;
 }
 
 .projectLink img:hover {
