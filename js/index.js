@@ -29,6 +29,6 @@ function addImageLink(link, image, name,  elementId) {
 };
 
 window.onload = function() {
-    addImageLink("https://github.com/kdclifford", "Assets/github.png", "Github", "navigation");
-    addImageLink("https://www.linkedin.com/in/kyle-clifford-7474b4206", "Assets/linkedin.png", "Linkedin", "navigation");
+    addImageLink("https://github.com/kdclifford", "./Assets/github.png", "Github", "navigation");
+    addImageLink("https://www.linkedin.com/in/kyle-clifford-7474b4206", "./Assets/linkedin.png", "Linkedin", "navigation");
 }
