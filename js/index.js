@@ -13,17 +13,17 @@ function addImageLink(link, image, name, elementId) {
     a.setAttribute("href", link);
     a.setAttribute("target", "_blank");
 
-    const div2 = document.createElement("div");
-    div2.setAttribute("class", "image");
+    const div = document.createElement("div");
+    div.setAttribute("class", "image");
 
-    const img2 = document.createElement("img");
-    img2.setAttribute("alt", name);
-    img2.setAttribute("src", image);
-    img2.setAttribute("title", name);
+    const img = document.createElement("img");
+    img.setAttribute("alt", name);
+    img.setAttribute("src", image);
+    img.setAttribute("title", name);
 
-    div2.appendChild(img2);
+    div.appendChild(img);
 
-    a.appendChild(div2);
+    a.appendChild(div);
 
     const element = document.getElementById(elementId);
     element.appendChild(a);
