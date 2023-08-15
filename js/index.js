@@ -19,6 +19,7 @@ function addImageLink(link, image, name, elementId) {
     const img2 = document.createElement("img");
     img2.setAttribute("alt", name);
     img2.setAttribute("src", image);
+    img2.setAttribute("title", name);
 
     div2.appendChild(img2);
 
