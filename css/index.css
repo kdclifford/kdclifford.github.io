@@ -1,29 +1,29 @@
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(239,239,239);
+    background-color: rgb(239, 239, 239);
     margin: 0;
     text-align: center;
 
 }
 
 #navigation {
-    /* background-color: rgb(239,239,239); */
     height: 40px;
     width: 100%;
     text-align: right;
     display: inline-flexbox;
     overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed;
+    top: 0;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .pageLink {
     font-size: 20px;
-    color: rgb(40,40,40);
+    color: rgb(40, 40, 40);
     margin-right: 10px;
     margin-left: 10px;
     font-family: 'Candara';
@@ -35,7 +35,7 @@ body {
 }
 
 #currentPage {
-    color: rgb(40,40,40);
+    color: rgb(40, 40, 40);
     font-weight: bold;
 }
 
@@ -54,8 +54,9 @@ body {
 .title {
     text-align: center;
     font-family: 'Candara';
-    color: rgb(40,40,40);
+    color: rgb(40, 40, 40);
     background-image: url(./Assets/banner.png);
+    font-size: 1.5vw;
 }
 
 .image {
@@ -67,11 +68,9 @@ body {
 .projectLink img {
     height: 400px;
     width: 600px;
-    margin-right: 8px;
-    margin-left: 8px;
-    margin-top: 8px;
+    margin: 10px;
     border: 3px solid;
-    border-color: rgb(40,40,40);
+    border-color: rgb(40, 40, 40);
     transition: transform .2s;
     vertical-align: middle;
 }
@@ -95,8 +94,8 @@ body {
     visibility: hidden;
     width: auto;
     padding: 10px;
-    background-color: rgb(40,40,40);
-    color: rgb(239,239,239);
+    background-color: rgb(40, 40, 40);
+    color: rgb(239, 239, 239);
     text-align: center;
     border-radius: 6px;
 
@@ -120,5 +119,52 @@ body {
     margin-right: 8px;
     margin-left: 8px;
     border: 3px solid;
-    border-color: rgb(40,40,40);
+    border-color: rgb(40, 40, 40);
+}
+
+#pText {
+    color: rgb(40, 40, 40);
+    text-align: center;
+    font-family: 'Candara';
+    text-decoration: none;
+    font-size: 2vw;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#contact a {
+    color: rgb(40, 40, 40);
+    text-align: center;
+    font-family: 'Candara';
+    font-size: 35px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+#contact {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+#about {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.footerImage img {
+    height: 5%;
+    width: 5%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 2%;
+    text-decoration: none;
+}
+
+.footerImage a {
+    text-decoration: none;
 }

@@ -3,7 +3,7 @@ function dynamicImg(element, preview) {
 };
 
 function staicImg(element, preview) {
-    element.setAttribute('src', preview + '.jpg');
+    element.setAttribute('src', preview);
 };
 
 
@@ -42,6 +42,7 @@ function addPageLink(link, text, elementId) {
 window.onload = function () {
     addImageLink("https://github.com/kdclifford", "./Assets/github.png", "Github", "navigation");
     addImageLink("https://www.linkedin.com/in/kyle-clifford-7474b4206", "./Assets/linkedin.png", "Linkedin", "navigation");
+    addPageLink("mailto: kdclifford@icloud.com", "kdclifford@icloud.com", "navigation");
     addPageLink("./index.html#about", "About", "navigation");
     addPageLink("./index.html#projects", "Work", "navigation");
     addPageLink("./index.html#contact", "Contact", "navigation");
