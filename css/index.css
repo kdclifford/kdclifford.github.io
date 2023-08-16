@@ -146,12 +146,12 @@ body {
     font-style: italic;
 }
 
-#contact {
+#about {
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
-#about {
+#contact {
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -168,3 +168,25 @@ body {
 .footerImage a {
     text-decoration: none;
 }
+
+#contact a:hover {
+    opacity: 50%;
+}
+
+.email {
+    position: absolute;
+    margin-left: 45%;
+    margin-right: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .center span {
+    text-align: center;
+  }
