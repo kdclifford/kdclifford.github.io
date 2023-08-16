@@ -175,8 +175,8 @@ body {
 
 .email {
     position: absolute;
-    margin-left: 45%;
-    margin-right: 45%;
+    margin-left: 45vw;
+    margin-right: 45vw;
     left: 0;
     right: 0;
     text-align: center;
