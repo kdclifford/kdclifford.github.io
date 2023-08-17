@@ -32,9 +32,9 @@
 				Features
 			</h1>
 			<ul id="pText">
-				<li><span> Ping Ponging (Effect Chaining)</span></li>
+				<li><span> Shader Chaining</span></li>
 				<li><span>imgui</span></li>
-				<li><span>Multiple camera post processing</span></li>
+				<li><span>Multi camera post processing</span></li>
 			</ul>
 		</div>
 		<div id="effects" class="center title">
@@ -42,24 +42,140 @@
 			<h1>
 				Shader effects
 			</h1>
-			<ul id="pText">
-				<li><span>God Rays (Volumetric Lighting)</span></li>
-				<li><span>Gaussian Blur</span></li>
-				<li><span>Cell Shaded</span></li>
+			<ol id="pText">
+				<a href="./PostProcessing.html#godRays">
+					<li><span>God Rays</span></li>
+				</a>
+				<a href="./PostProcessing.html#gaussian">
+					<li><span>Gaussian Blur</span></li>
+				</a>
+				<a href="./PostProcessing.html#cellShaded">
+					<li><span>Cell Shaded</span></li>
+				</a>
 				<li><span>Spiral</span></li>
 				<li><span>Under water</span></li>
 				<li><span>Pixelated</span></li>
 				<li><span>CRT TV</span></li>
 				<li><span>Bloom</span></li>
-				<li><span>And more...</span></li>
-			</ul>
+				<a href="./PostProcessing.html#more">
+					<li><span>And more...</span></li>
+				</a>
+			</ol>
 		</div>
 	</div>
 
-	<div>
-		<a href="https://github.com/kdclifford/Kyle-Clifford-Post-Processing" target="_blank">
-			<img class="headerImage" src="./Assets/God_Rays_Blur.jpg" alt="Post Processing Image">
+	<div id="godRays" class="title">
+		<h1>
+			God Rays
+		</h1>
+		<p id="pText"> My Implementation of God rays required Effect Chaining this because multiple effects were needed
+			to
+			create the god rays. Firstly, I needed to discard all the dark areas in the render target which would leave
+			me
+			with the brightest pixels (This is like the Bloom Shader). Secondly the manipulated render target would get
+			passed to the God ray shader which would sample the render target make it bigger and layer it over the
+			original, the number of times its samples/Layers can be set in imgui. Lastly, I added one more shader pass
+			which was Gaussian Blur. This last shader pass was due to being able to see the individual layers of the god
+			rays this could be fixed by increasing the sample size but would cause a lot of hanging and slow down. Or
+			you could do a last shader pass of Gaussian Blur which would blend all the layers together. I added examples
+			below.
+		</p>
+
+		<h2>
+			God Rays No Gaussian Blur
+		</h2>
+		<a href="https://github.com/kdclifford/Kyle-Clifford-Post-Processing" target="_blank"
+			title="Post Processing Github">
+			<img class="headerImage" src="./Assets/GodRaysNoBlur.jpg" alt="Post Processing Image">
 		</a>
+
+		<h2>
+			God Rays with Gaussian Blur
+		</h2>
+		<a href="https://github.com/kdclifford/Kyle-Clifford-Post-Processing" target="_blank"
+			title="Post Processing Github">
+			<img class="headerImage" src="./Assets/GodRaysBlur.jpg" alt="Post Processing Image">
+		</a>
+
+		<h2>
+			God Rays Other example
+		</h2>
+		<a href="https://github.com/kdclifford/Kyle-Clifford-Post-Processing" target="_blank"
+			title="Post Processing Github">
+			<img class="headerImage" src="./Assets/GodRays.jpg" alt="Post Processing Image">
+		</a>
+	</div>
+
+	<div id="gaussian" class="title">
+		<h1>
+			Gaussian Blur
+		</h1>
+		<p id="pText">Gaussian Blur emerges as an invaluable technique, seamlessly synergizing with other
+			post-processing effects to elegantly conceal imperfections and seamlessly fuse images, erasing discernible
+			artifacts. Within my Gaussian blur implementation, I harnessed the potency of a two-dimensional array,
+			serving as the vessel for my convolution matrix. This matrix finds its purpose in the GPU realm,
+			orchestrating a delicate dance upon the canvas of an image. Executing this effect mandates a choreography of
+			two shader passes: the first orchestrates a horizontal blur, while the second conducts a vertical blur,
+			culminating in an exquisite symphony of visual refinement.
+		</p>
+
+		<h2>
+			Gaussian Blur example
+		</h2>
+		<a href="https://github.com/kdclifford/Kyle-Clifford-Post-Processing" target="_blank"
+			title="Post Processing Github">
+			<img class="headerImage" src="./Assets/blur.jpg" alt="Gaussian Blur Image">
+		</a>
+
+		<h2>
+			No Gaussian Blur example
+		</h2>
+		<a href="https://github.com/kdclifford/Kyle-Clifford-Post-Processing" target="_blank"
+			title="Post Processing Github">
+			<img class="headerImage" src="./Assets/noblur.jpg" alt="No Gaussian Blur Image">
+		</a>
+	</div>
+
+	<div id="cellShaded" class="title">
+		<h1>
+			Cell Shaded
+		</h1>
+		<p id="pText">
+			Cell shading is a graphics technique used in art, animation, and games to make objects look like they're
+			from a cartoon or comic book. Instead of realistic shading, it uses flat colors, bold outlines, and simple
+			lighting to create a distinct and artistic appearance. A popular game to use this effect is Borderlands. My
+			example of cel shading is a fake version as it takes an image samples and area and works out what it thinks
+			are edges and colours them black.
+		</p>
+
+		<h2>
+			Cell Shaded example
+		</h2>
+		<a href="https://github.com/kdclifford/Kyle-Clifford-Post-Processing" target="_blank"
+			title="Post Processing Github">
+			<img class="headerImage" src="./Assets/cellShaded.jpg" alt="Cell Shaded Image">
+		</a>
+
+		<h2>
+			No Cell Shaded example
+		</h2>
+		<a href="https://github.com/kdclifford/Kyle-Clifford-Post-Processing" target="_blank"
+			title="Post Processing Github">
+			<img class="headerImage" src="./Assets/noCellShaded.jpg" alt="No Cell Shaded Image">
+		</a>
+	</div>
+
+	<div id="more" class="title">
+		<h1>
+			More Effects
+		</h1>
+		<p id="pText">
+		</p>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/P1aXFleQw-s" title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen></iframe>
 	</div>
 
 	<div id="contact" class="title">
@@ -80,8 +196,6 @@
 			</a>
 		</div>
 	</div>
-
-
 	<div id="navigation"></div>
 </body>
 

@@ -135,6 +135,11 @@ body {
     margin-bottom: 0px;
 }
 
+#pText a{
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+}
+
 #contact a {
     color: rgb(40, 40, 40);
     text-align: center;
@@ -182,7 +187,7 @@ body {
     text-align: center;
 }
 
-ul {
+ol {
     display: inline-block;
     text-align: left;
   }
@@ -190,3 +195,4 @@ ul {
   .center span {
     text-align: center;
   }
+
