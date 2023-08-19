@@ -38,3 +38,7 @@ function addPageLink(link, text, classType, elementId) {
     const element = document.getElementById(elementId);
     element.appendChild(a);
 };
+
+function openNewTab(link) {
+    window.open("https://" + link);
+};
