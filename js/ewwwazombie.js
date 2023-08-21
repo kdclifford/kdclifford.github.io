@@ -6,6 +6,7 @@ window.onload = function () {
     addPageLink("mailto: kdclifford@icloud.com", "kdclifford@icloud.com", "pageLink email", "navigation");
     addPageLink("./index.html", "Home", "pageLink", "navigation");
     addPageLink("./EwwwAZombie.html#intro", "Intro", "pageLink", "navigation");
+    addPageLink("./EwwwAZombie.html#features", "Features", "pageLink", "navigation");
     addPageLink("./EwwwAZombie.html#idea", "Idea", "pageLink", "navigation");
     addPageLink("./EwwwAZombie.html#gameplay", "Gameplay", "pageLink", "navigation");
     addPageLink("./EwwwAZombie.html#contact", "Contact", "pageLink", "navigation");
