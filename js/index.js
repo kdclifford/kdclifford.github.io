@@ -6,5 +6,11 @@ window.onload = function () {
     addPageLink("./index.html#about", "About", "pageLink", "navigation");
     addPageLink("./index.html#projects", "Work", "pageLink", "navigation");
     addPageLink("./index.html#contact", "Contact", "pageLink", "navigation");
-
+    addTag("pp", ['C++', 'DirectX 9', 'HLSL']);
+    addTag("tank", ['C++', 'DirectX 9']);
+    addTag("ewww", ['C#', 'Unity']);
+    addTag("magebutty", ['C#', 'Unity']);
+    addTag("polysect", ['C#', 'Unity']);
+    addTag("gameinaday", ['C++', 'Unreal']);
+    addTag("nand", ['C++', 'Assembly']);
 }

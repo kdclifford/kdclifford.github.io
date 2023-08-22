@@ -42,3 +42,15 @@ function addPageLink(link, text, classType, elementId) {
 function openNewTab(link) {
     window.open("https://" + link);
 };
+const colors = ['#9C4F96', '#FF6355', '#FBA949', '#FAE442', '#8BD448', '#2AA8F2'];
+function addTag(tag, tabs) {
+    for (let i = 0; i < tabs.length; i++) {
+        const span = document.createElement("span");
+        span.setAttribute("class", "tag");
+        span.innerHTML = tabs[i];
+        span.style.backgroundColor = colors[i];
+
+        const element = document.getElementById(tag);
+        element.appendChild(span);
+    }
+};
