@@ -48,7 +48,7 @@ function addTag(tag, tabs) {
         const span = document.createElement("span");
         span.setAttribute("class", "tag");
         span.innerHTML = tabs[i];
-        span.style.backgroundColor = colors[i];
+        span.style.backgroundColor = colors[i % 6];
 
         const element = document.getElementById(tag);
         element.appendChild(span);
