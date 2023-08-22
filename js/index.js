@@ -6,8 +6,8 @@ window.onload = function () {
     addPageLink("./index.html#about", "About", "pageLink", "navigation");
     addPageLink("./index.html#projects", "Work", "pageLink", "navigation");
     addPageLink("./index.html#contact", "Contact", "pageLink", "navigation");
-    addTag("pp", ['C++', 'DirectX 9', 'HLSL', 'Imgui']);
-    addTag("tank", ['C++', 'DirectX 9', 'Message System', 'Camera Picking', 'Component']);
+    addTag("pp", ['C++', 'DirectX9', 'HLSL', 'Imgui']);
+    addTag("tank", ['C++', 'DirectX9', 'MessageSystem', 'ComponentSystem']);
     addTag("ewww", ['C#', 'Unity']);
     addTag("magebutty", ['C#', 'Unity']);
     addTag("polysect", ['C#', 'Unity']);
