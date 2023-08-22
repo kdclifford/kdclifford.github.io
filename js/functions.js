@@ -42,7 +42,7 @@ function addPageLink(link, text, classType, elementId) {
 function openNewTab(link) {
     window.open("https://" + link);
 };
-const colors = ['#9C4F96', '#FF6355', '#FBA949', '#FAE442', '#8BD448', '#2AA8F2'];
+const colors = ['#FBA949', '#FAE442', '#8BD448', '#2AA8F2', '#9C4F96', '#FF6355'];
 function addTag(tag, tabs) {
     for (let i = 0; i < tabs.length; i++) {
         const span = document.createElement("span");
